@@ -30,4 +30,11 @@ class ShiftController extends Controller
 
         return response()->json(['message' => 'Shift created successfully']);
     }
+
+    public function index()
+    {
+        $shifts = Shift::all();
+
+        return response()->json($shifts);
+    }
 }

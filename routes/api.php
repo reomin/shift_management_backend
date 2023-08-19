@@ -31,3 +31,5 @@ Route::get('/users', [UserController::class, 'index']);
 Route::post('/users', [UserController::class, 'create']);
 
 Route::post('/shifts', [ShiftController::class, 'create']);
+
+Route::get('/shifts', [ShiftController::class, 'index']);
